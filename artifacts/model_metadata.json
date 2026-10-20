@@ -1,0 +1,41 @@
+{
+  "selected_model": "Logistic Regression",
+  "selection_criterion": "highest training CV ROC-AUC",
+  "feature_names": [
+    "age",
+    "sex",
+    "cp",
+    "trestbps",
+    "chol",
+    "fbs",
+    "restecg",
+    "thalach",
+    "exang",
+    "oldpeak",
+    "slope",
+    "ca",
+    "thal"
+  ],
+  "metrics": [
+    {
+      "model": "Logistic Regression",
+      "accuracy": 0.8852459016393442,
+      "precision": 0.8387096774193549,
+      "recall": 0.9285714285714286,
+      "f1": 0.8813559322033898,
+      "test_roc_auc": 0.9664502164502166,
+      "cv_roc_auc": 0.9024931590148981,
+      "best_params": "{'model__C': 1.0}"
+    },
+    {
+      "model": "Random Forest",
+      "accuracy": 0.8360655737704918,
+      "precision": 0.8,
+      "recall": 0.8571428571428571,
+      "f1": 0.8275862068965517,
+      "test_roc_auc": 0.9426406926406926,
+      "cv_roc_auc": 0.8974860083555736,
+      "best_params": "{'model__max_depth': 3, 'model__n_estimators': 200}"
+    }
+  ]
+}
